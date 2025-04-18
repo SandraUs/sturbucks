@@ -496,6 +496,10 @@ a:hover, button:hover {
 	background: linear-gradient(260deg, rgba(35,114,73,1) 0%, rgba(53,198,107,1) 100%);
 }
 
+.card:hover .card__img {
+	transform: translateY(-5px);
+}
+
 .card__img-wrapper {
 	position: relative;
 	margin-bottom: 30px;
@@ -519,6 +523,7 @@ a:hover, button:hover {
 	width: 180px;
 
 	filter: drop-shadow(0 4px 46px rgba(0, 0, 0, 0.48));
+	transition: transform 0.5s;
 }
 
 .card__title {
